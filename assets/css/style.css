@@ -58,6 +58,8 @@ button:hover {
     line-height: 48px;
     background-color: var(--light-blue);
     margin-right: 40px;
+    height: 100%;
+    max-width: 100%;
   }
 }
 
@@ -88,7 +90,6 @@ button:hover {
     margin-bottom: 32px;
     outline: none;
     border: none;
-
   }
 
   button {
@@ -155,3 +156,96 @@ button:hover {
   color: var(--dark-blue);
   border: 1px solid var(--dark-blue);
 }
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 0;
+  }
+  .criptografia {
+    flex-direction: column;
+    width: 100vw;
+    padding: 20px;
+  }
+  .input_content {
+    width: auto;
+    left: 0;
+  }
+  .logo{
+    margin-left: -35px;
+  }
+  .input_text {
+    margin: 0;
+    input{
+      height: 100%;
+    }
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    button {
+      width: 100%;
+    }
+  }
+  .output {
+    height: auto;
+    width: auto;
+    img {
+      display: none;
+    }
+  }
+  .output_text{
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+  .criptografia {
+    flex-direction: column;
+    width: 100vw;
+    padding: 20px;
+  }
+  .input_content {
+    width: auto;
+    left: 0;
+  }
+  .logo{
+    margin-left: -35px;
+  }
+  .input_text {
+    margin: 0;
+    input{
+      height: 300px;
+    }
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    button{
+      width: 100%;
+    }
+  }
+  .output {
+    height: auto;
+    width: auto;
+    img {
+      display: none;
+    }
+  }
+  .output_text{
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    width: 100%;
+  }
+  .no_text{
+    width: 100%;
+  }
+}
+
