@@ -249,3 +249,16 @@ button:hover {
   }
 }
 
+title{
+  animation: rotative 15s linear infinite;
+}
+
+@keyframes rotative {
+  0%{
+    transform: translateX(-20%) translateZ(0);
+  }
+  100%{
+    transform: translateX(-120%) translateZ(0);
+  }
+}
+
